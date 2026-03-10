@@ -7,7 +7,7 @@ class VentanaTemperatura(QtWidgets.QDialog):
         uic.loadUi("gui/ventana_temperatura.ui",self) #load codigo ui en gui
         self.show()
         
-        self.buttonPush.clicked.connect(self.botonConvertirClick) #nombre boton push 
+        self.pushButton.clicked.connect(self.botonConvertirClick) #nombre boton push 
 
     def botonConvertirClick(self):
         faren = int(self.lineEdit_farenheit.text())
