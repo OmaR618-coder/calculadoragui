@@ -1,7 +1,7 @@
 from PyQt5 import QtWidgets,uic
 from clases.calculadora import Calculadora #Importamos por que esta en otro archivo
 
-class VentanaCalculadora(QtWidgets.QMainWindow):
+class VentanaCalculadora(QtWidgets.QDialog):
     def __init__(self):
         super().__init__()
         uic.loadUi("gui/ventana_calculadora.ui",self)
